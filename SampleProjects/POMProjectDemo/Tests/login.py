@@ -12,7 +12,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "...", ".."))
 
 class LoginTest(unittest.TestCase):
 
-
     @classmethod
     def setUpClass(cls):
         cls.driver = webdriver.Firefox(executable_path="/Users/mactastic/Documents/GitHub/Selenium/drivers/geckodriver")
@@ -32,7 +31,6 @@ class LoginTest(unittest.TestCase):
         homepage = HomePage(driver)
         homepage.click_welcome()
         homepage.click_logout()
-
         # time.sleep(2)
 
     def test_02_login_invalid_username(self):
